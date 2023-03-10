@@ -183,6 +183,13 @@ body {
   cursor: pointer;
 }
 
+.filter:hover,
+.filter:focus {
+  background: #404bbf;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
 .project-title {
   font-weight: 500;
   font-size: 20px;
