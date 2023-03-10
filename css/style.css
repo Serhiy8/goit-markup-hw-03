@@ -353,7 +353,7 @@ header {
 
 .project-list .item {
   width: 360px;
-  border: 1px solid #e7e9fc;
+  outline: 1px solid #e7e9fc;
 }
 
 .project-list .item:not(:nth-last-child(-n + 3)) {
