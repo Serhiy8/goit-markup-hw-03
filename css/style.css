@@ -128,6 +128,12 @@ header {
   margin-right: 40px;
 }
 
+.auth-nav .link {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 /* Hero */
 
 .page-hero.section {
@@ -141,7 +147,8 @@ header {
 }
 
 .hero-title {
-  margin-bottom: 48px;
+  width: 498px;
+  margin: 0 auto 48px;
 
   font-weight: 700;
   font-size: 56px;
@@ -169,10 +176,7 @@ header {
 
 .benefits-list {
   display: flex;
-}
-
-.benefits-list .item:not(:last-child) {
-  margin-right: 8px;
+  gap: 24px;
 }
 
 .work-title {
@@ -198,10 +202,7 @@ header {
 }
 .page-doing .list {
   display: flex;
-}
-
-.page-doing .item:not(:last-child) {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .doing-title {
@@ -225,21 +226,25 @@ header {
 .page-team .list {
   display: flex;
   text-align: center;
+  gap: 24px;
 }
 
-.page-team .item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.page-team .item {
+.team-item {
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-container {
+  padding: 32px 16px;
+  background: #ffffff;
+
+  border-radius: 0 0 4px 4px;
+}
+
 .team-img {
-  margin-bottom: 32px;
+  display: block;
 }
 
 .team-title {
@@ -265,8 +270,6 @@ header {
 }
 
 .team-text {
-  margin-bottom: 32px;
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -317,10 +320,7 @@ header {
   justify-content: center;
 
   margin-bottom: 72px;
-}
-
-.porfolio-button .item:not(:last-child) {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .filter {
@@ -331,6 +331,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  background: #f4f4fd;
   color: var(--main-color);
   cursor: pointer;
 
@@ -348,28 +349,21 @@ header {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
-.project-list .item {
-  width: calc(100% - 48px) / 3;
-  outline: 1px solid #e7e9fc;
-}
-
-.project-list .item:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-
-.project-list .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 48px;
+.project-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .project-img {
-  margin-bottom: 32px;
+  display: block;
 }
 
 .project-title {
   margin-bottom: 8px;
-  margin-left: 16px;
 
   font-weight: 500;
   font-size: 20px;
@@ -379,9 +373,6 @@ header {
 }
 
 .project-text {
-  margin-bottom: 32px;
-  margin-left: 16px;
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
