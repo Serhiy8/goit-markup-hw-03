@@ -171,8 +171,8 @@ header {
   display: flex;
 }
 
-.benefits-list li:not(:last-child) {
-  margin-right: 24px;
+.benefits-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .work-title {
@@ -199,6 +199,7 @@ header {
 .page-doing .list {
   display: flex;
 }
+
 .page-doing .item:not(:last-child) {
   margin-right: 24px;
 }
@@ -347,13 +348,15 @@ header {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
 }
 
 .project-list .item {
-  width: 360px;
+  width: calc(100% - 48px) / 3;
   outline: 1px solid #e7e9fc;
+}
+
+.project-list .item:not(:nth-child(3n)) {
+  margin-right: 24px;
 }
 
 .project-list .item:not(:nth-last-child(-n + 3)) {
