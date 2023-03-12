@@ -195,6 +195,10 @@ header {
   letter-spacing: 0.02em;
 }
 
+.benefits-item {
+  width: 264px;
+}
+
 /* What are we doing */
 
 .page-doing.section {
